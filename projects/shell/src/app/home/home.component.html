@@ -1,1 +1,7 @@
 <h1>Welcome!</h1>
+<button (click)="getUsers()">Get Users</button>
+<div>
+    @for (user of users(); track $index) {
+        <div>{{$index}}: {{user.name}}</div>
+    }
+</div>
